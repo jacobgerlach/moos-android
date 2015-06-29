@@ -1,0 +1,57 @@
+/*   MOOS - Mission Oriented Operating Suite 
+*  
+*   A suit of Applications and Libraries for Mobile Robotics Research 
+*   Copyright (C) 2001-2005 Massachusetts Institute of Technology and 
+*   Oxford University. 
+*
+*   The original C++ version of this software was written by Paul Newman
+*   at MIT 2001-2002 and Oxford University 2003-2005. 
+*   email: pnewman@robots.ox.ac.uk. 
+*	  
+*   This Java version of MOOSClient is part of the MOOSBeans for Java
+*   package written by Benjamin C. Davis at Oxford University 2010-2011  
+*   email: ben@robots.ox.ac.uk
+*
+*   This file is part of the MOOSBeans for Java package.
+*		
+*   This program is free software; you can redistribute it and/or 
+*   modify it under the terms of the GNU General Public License as 
+*   published by the Free Software Foundation; either version 2 of the 
+*   License, or (at your option) any later version. 
+*		  
+*   This program is distributed in the hope that it will be useful, 
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of 
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU 
+*   General Public License for more details. 
+*			
+*   You should have received a copy of the GNU General Public License 
+*   along with this program; if not, write to the Free Software 
+*   Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 
+*   02111-1307, USA. 
+*
+*                      END_GPL   
+*/
+
+package MOOS;
+
+/**
+ *
+ * @author Benjamin C. Davis
+ *
+ * See MOOSClient for an example implementation of this class which can be used
+ * or extended or merely as a template for a custom implementation.
+ */
+public interface MOOSClientInterface extends MOOSMsgEventListener {
+
+    /**
+     *
+     * @param client The MOOSCommClient object which will handle the actual sending and receiving of messages and call this objects processMOOSMsg() method when a requested message arrives. This method must call the MOOSCommClients register(thisObject) method.
+     */
+    public void setMOOSCommClient(MOOSEventServer client);
+
+    /**
+     *
+     * @return The current MOOSCommClient in use if there is one connected.
+     */
+    public MOOSEventServer getMOOSCommClient();
+}

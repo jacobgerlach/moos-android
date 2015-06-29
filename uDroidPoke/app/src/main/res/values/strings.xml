@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">uDroidPoke</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="MOOSVarPrompt">MOOS Variable:</string>
+    <string name="MOOSVarValuePrompt">Variable Value:</string>
+    <string name="MOOSDBPrompt">MOOSDB IP:</string>
+    <string name="MOOSPortPrompt">MOOSDB Port:</string>
+    <string name="pokeButtonLabel">Poke!</string>
+</resources>

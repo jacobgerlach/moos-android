@@ -3,8 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/moos/moos.iml" filepath="$PROJECT_DIR$/moos/moos.iml" />
-      <module fileurl="file://$PROJECT_DIR$/moosbeans/moosbeans.iml" filepath="$PROJECT_DIR$/moosbeans/moosbeans.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../moosbeans/moosbeans.iml" filepath="$PROJECT_DIR$/../moosbeans/moosbeans.iml" />
       <module fileurl="file://$PROJECT_DIR$/uDroidPoke.iml" filepath="$PROJECT_DIR$/uDroidPoke.iml" />
     </modules>
   </component>

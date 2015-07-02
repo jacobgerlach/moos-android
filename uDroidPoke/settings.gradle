@@ -1,1 +1,1 @@
-include ':app', ':moosbeans'
+include ':app', ':moosbeans', ':mylibrary'

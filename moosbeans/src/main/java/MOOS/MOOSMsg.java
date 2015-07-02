@@ -33,6 +33,8 @@
  */
 package MOOS;
 
+import android.util.Log;
+
 import java.lang.String;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
@@ -111,7 +113,7 @@ public class MOOSMsg extends java.util.EventObject implements java.io.Serializab
     protected int msgLength;
 
     //Tag for Android Logger
-    protected static final String TAG = "MOOS";
+    private static final String TAG = "MOOS";
 
     //////////////////////////////////////////////////////////////////////
     // Construction/Destruction
@@ -460,8 +462,8 @@ public class MOOSMsg extends java.util.EventObject implements java.io.Serializab
      */
     public static void moosTrace(String s, Object... variables) {
 
-//        Log.d(TAG,String.format(s,variables));
-        System.out.printf(s, variables);
+        Log.d(TAG, String.format(s, variables));
+//        System.out.printf(s, variables);
     }
 
     /**
